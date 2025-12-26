@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/Api/">
+    <Project Path="Gastos.Api/Gastos.Api.csproj" />
+  </Folder>
+  <Folder Name="/Application/">
+    <Project Path="Gastos.Application/Gastos.Application.csproj" />
+  </Folder>
+  <Folder Name="/Domain/">
+    <Project Path="Gastos.Domain/Gastos.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Gastos.Infrastructure/Gastos.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Shared/">
+    <Project Path="Gastos.Shared/Gastos.Shared.csproj" />
+  </Folder>
+</Solution>

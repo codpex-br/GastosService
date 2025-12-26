@@ -1,0 +1,193 @@
+[
+  {
+    "ContainingType": "Gastos.Api.Controllers.AuthController",
+    "Method": "AlterarSenha",
+    "RelativePath": "api/Auth/alterar-senha",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Gastos.Application.DTOs.AlterarSenhaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gastos.Api.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/AutenticarUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authModel",
+        "Type": "Gastos.Application.DTOs.LoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gastos.Api.Controllers.AuthController",
+    "Method": "AutoLogin",
+    "RelativePath": "api/Auth/auto-login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gastos.Api.Controllers.AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/Auth/Logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gastos.Api.Controllers.AuthController",
+    "Method": "Refresh",
+    "RelativePath": "api/Auth/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gastos.Api.Controllers.DespesasController",
+    "Method": "CriarDespesa",
+    "RelativePath": "api/Despesas/InserirDespesa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDespesa",
+        "Type": "Gastos.Application.DTOs.CriarDespesaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gastos.Api.Controllers.DespesasController",
+    "Method": "ListarDespesas",
+    "RelativePath": "api/Despesas/ListarDespesas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gastos.Api.Controllers.DespesasController",
+    "Method": "GetPrevisao",
+    "RelativePath": "api/Despesas/previsao-proximo-mes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gastos.Api.Controllers.DespesasController",
+    "Method": "GetTotalDespesasMesAtual",
+    "RelativePath": "api/Despesas/total-mes-atual",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gastos.Api.Controllers.RecuperacaoSenhaController",
+    "Method": "EnviarCodigo",
+    "RelativePath": "api/RecuperacaoSenha/enviar-codigo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enviarCodigoDto",
+        "Type": "Gastos.Application.DTOs.EnviarCodigoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gastos.Api.Controllers.RecuperacaoSenhaController",
+    "Method": "ValidarCodigo",
+    "RelativePath": "api/RecuperacaoSenha/validar-codigo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "validarCodigoDto",
+        "Type": "Gastos.Application.DTOs.ValidarCodigoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gastos.Api.Controllers.UsuarioController",
+    "Method": "InserirUsuario",
+    "RelativePath": "api/Usuario/InserirUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Nome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Senha",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FotoPerfilFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Gastos.Api.Controllers.UsuarioController",
+    "Method": "ListarUsuarios",
+    "RelativePath": "api/Usuario/ListarUsuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Gastos.Domain.Entities.UsuarioModel, Gastos.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

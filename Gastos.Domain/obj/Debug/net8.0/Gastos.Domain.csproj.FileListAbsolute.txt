@@ -1,0 +1,11 @@
+C:\Users\eu\Documents\GitHub\GastosService\Gastos.Domain\bin\Debug\net8.0\Gastos.Domain.deps.json
+C:\Users\eu\Documents\GitHub\GastosService\Gastos.Domain\bin\Debug\net8.0\Gastos.Domain.dll
+C:\Users\eu\Documents\GitHub\GastosService\Gastos.Domain\bin\Debug\net8.0\Gastos.Domain.pdb
+C:\Users\eu\Documents\GitHub\GastosService\Gastos.Domain\obj\Debug\net8.0\Gastos.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eu\Documents\GitHub\GastosService\Gastos.Domain\obj\Debug\net8.0\Gastos.Domain.AssemblyInfoInputs.cache
+C:\Users\eu\Documents\GitHub\GastosService\Gastos.Domain\obj\Debug\net8.0\Gastos.Domain.AssemblyInfo.cs
+C:\Users\eu\Documents\GitHub\GastosService\Gastos.Domain\obj\Debug\net8.0\Gastos.Domain.csproj.CoreCompileInputs.cache
+C:\Users\eu\Documents\GitHub\GastosService\Gastos.Domain\obj\Debug\net8.0\Gastos.Domain.dll
+C:\Users\eu\Documents\GitHub\GastosService\Gastos.Domain\obj\Debug\net8.0\refint\Gastos.Domain.dll
+C:\Users\eu\Documents\GitHub\GastosService\Gastos.Domain\obj\Debug\net8.0\Gastos.Domain.pdb
+C:\Users\eu\Documents\GitHub\GastosService\Gastos.Domain\obj\Debug\net8.0\ref\Gastos.Domain.dll

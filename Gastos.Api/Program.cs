@@ -26,11 +26,11 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 
 var issuer = builder.Configuration["Jwt:Issuer"] ??
-             throw new ArgumentNullException("A chave 'Jwt:Issuer' não foi encontrada nas configurações.");
+             throw new ArgumentNullException("A chave 'Jwt:Issuer' nï¿½o foi encontrada nas configuraï¿½ï¿½es.");
 var audience = builder.Configuration["Jwt:Audience"] ??
-               throw new ArgumentNullException("A chave 'Jwt:Audience' não foi encontrada nas configurações.");
+               throw new ArgumentNullException("A chave 'Jwt:Audience' nï¿½o foi encontrada nas configuraï¿½ï¿½es.");
 var accessSecret = builder.Configuration["Jwt:AccessSecret"] ??
-                   throw new ArgumentNullException("A chave 'Jwt:AccessSecret' não foi encontrada nas configurações.");
+                   throw new ArgumentNullException("A chave 'Jwt:AccessSecret' nï¿½o foi encontrada nas configuraï¿½ï¿½es.");
 
 var accessKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(accessSecret));
 
@@ -52,12 +52,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         {
             OnAuthenticationFailed = context =>
             {
-                Console.WriteLine($"Token inválido: {context.Exception.Message}");
+                Console.WriteLine($"Token invï¿½lido: {context.Exception.Message}");
                 return Task.CompletedTask;
             },
             OnTokenValidated = context =>
             {
-                Console.WriteLine($"Token válido para: {context.Principal.Identity.Name}");
+                Console.WriteLine($"Token vï¿½lido para: {context.Principal.Identity.Name}");
                 return Task.CompletedTask;
             }
         };
@@ -121,6 +121,20 @@ app.UseSwaggerUI(options =>
     options.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
 });
 
+var uploadsPath = Path.Combine(app.Environment.ContentRootPath, "wwwroot", "uploads");
+
+if (!Directory.Exists(uploadsPath))
+{
+    Directory.CreateDirectory(uploadsPath);
+}
+
+app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(uploadsPath),
+    RequestPath = "/uploads"
+});
+
 if (!app.Environment.IsProduction())
 {
     app.UseHttpsRedirection();
@@ -128,15 +142,6 @@ if (!app.Environment.IsProduction())
 
 app.UseCors("corsapp");
 app.UseRouting();
-
-app.UseStaticFiles();
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(builder.Environment.ContentRootPath, "wwwroot", "uploads")),
-    RequestPath = "/uploads"
-});
-
 app.UseAuthentication();
 app.UseAuthorization();
 

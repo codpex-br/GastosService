@@ -71,17 +71,14 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
     });
 
-builder.Services.AddCors(options =>
+builder.Services.AddCors(p => p.AddPolicy("corsapp", policy =>
 {
-    options.AddPolicy("Default", policy =>
-    {
-        policy
+    policy
         .WithOrigins("http://localhost:5173", "http://192.168.1.2:5173")
         .AllowAnyMethod()
         .AllowAnyHeader()
         .AllowCredentials();
-    });
-});
+}));
 
 builder.Services.AddSwaggerGen(options =>
 {
@@ -120,19 +117,31 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
-    options.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
     options.RoutePrefix = string.Empty;
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
 });
 
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
-app.Urls.Add($"http://0.0.0.0:{port}");
+if (!app.Environment.IsProduction())
+{
+    app.UseHttpsRedirection();
+}
 
-app.UseHttpsRedirection();
+app.UseCors("corsapp");
 app.UseRouting();
-app.UseCors("Default");
-app.UseAuthentication(); 
+
+app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(builder.Environment.ContentRootPath, "wwwroot", "uploads")),
+    RequestPath = "/uploads"
+});
+
+app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
+
 app.MapGet("/health", () => "OK");
 
 if (app.Environment.IsProduction())
@@ -153,19 +162,5 @@ if (app.Environment.IsProduction())
         }
     }, null, TimeSpan.Zero, TimeSpan.FromMinutes(14));
 }
-
-var uploadsPath = Path.Combine(builder.Environment.ContentRootPath, "wwwroot", "uploads");
-
-if (!Directory.Exists(uploadsPath))
-{
-    Directory.CreateDirectory(uploadsPath);
-}
-
-app.UseStaticFiles();
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(uploadsPath),
-    RequestPath = "/uploads"
-});
 
 app.Run();

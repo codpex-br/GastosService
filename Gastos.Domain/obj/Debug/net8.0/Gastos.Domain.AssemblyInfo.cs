@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gastos.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8eae3fca24b5524896943ed76b7aaa3e26d821d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gastos.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gastos.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

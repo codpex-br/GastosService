@@ -170,6 +170,25 @@
         }
       }
     },
+    "/health": {
+      "get": {
+        "tags": [
+          "Gastos.Api"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/RecuperacaoSenha/enviar-codigo": {
       "post": {
         "tags": [

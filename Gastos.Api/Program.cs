@@ -117,14 +117,15 @@ builder.Services.AddAuthorization();
 var app = builder.Build();
 
 
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
-    });
-}
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
+    options.RoutePrefix = string.Empty;
+});
+
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+app.Urls.Add($"http://0.0.0.0:{port}");
 
 app.UseHttpsRedirection();
 app.UseRouting();
@@ -153,11 +154,17 @@ if (app.Environment.IsProduction())
     }, null, TimeSpan.Zero, TimeSpan.FromMinutes(14));
 }
 
+var uploadsPath = Path.Combine(builder.Environment.ContentRootPath, "wwwroot", "uploads");
+
+if (!Directory.Exists(uploadsPath))
+{
+    Directory.CreateDirectory(uploadsPath);
+}
+
 app.UseStaticFiles();
 app.UseStaticFiles(new StaticFileOptions
 {
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(builder.Environment.ContentRootPath, "wwwroot", "uploads")),
+    FileProvider = new PhysicalFileProvider(uploadsPath),
     RequestPath = "/uploads"
 });
 

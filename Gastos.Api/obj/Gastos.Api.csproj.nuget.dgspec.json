@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Api\\Gastos.Api.csproj": {}
+    "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Api\\Gastos.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Api\\Gastos.Api.csproj": {
+    "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Api\\Gastos.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Api\\Gastos.Api.csproj",
+        "projectUniqueName": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Api\\Gastos.Api.csproj",
         "projectName": "Gastos.Api",
-        "projectPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Api\\Gastos.Api.csproj",
-        "packagesPath": "C:\\Users\\eu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Api\\obj\\",
+        "projectPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Api\\Gastos.Api.csproj",
+        "packagesPath": "C:\\Users\\joaog\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\eu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joaog\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,14 +32,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Application\\Gastos.Application.csproj": {
-                "projectPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Application\\Gastos.Application.csproj"
+              "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Application\\Gastos.Application.csproj": {
+                "projectPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Application\\Gastos.Application.csproj"
               },
-              "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Domain\\Gastos.Domain.csproj": {
-                "projectPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Domain\\Gastos.Domain.csproj"
+              "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Domain\\Gastos.Domain.csproj": {
+                "projectPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Domain\\Gastos.Domain.csproj"
               },
-              "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Infrastructure\\Gastos.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Infrastructure\\Gastos.Infrastructure.csproj"
+              "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Infrastructure\\Gastos.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Infrastructure\\Gastos.Infrastructure.csproj"
               }
             }
           }
@@ -54,7 +54,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -96,24 +96,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Application\\Gastos.Application.csproj": {
+    "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Application\\Gastos.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Application\\Gastos.Application.csproj",
+        "projectUniqueName": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Application\\Gastos.Application.csproj",
         "projectName": "Gastos.Application",
-        "projectPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Application\\Gastos.Application.csproj",
-        "packagesPath": "C:\\Users\\eu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Application\\obj\\",
+        "projectPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Application\\Gastos.Application.csproj",
+        "packagesPath": "C:\\Users\\joaog\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\eu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joaog\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -128,11 +128,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Domain\\Gastos.Domain.csproj": {
-                "projectPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Domain\\Gastos.Domain.csproj"
+              "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Domain\\Gastos.Domain.csproj": {
+                "projectPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Domain\\Gastos.Domain.csproj"
               },
-              "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Shared\\Gastos.Shared.csproj": {
-                "projectPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Shared\\Gastos.Shared.csproj"
+              "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Shared\\Gastos.Shared.csproj": {
+                "projectPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Shared\\Gastos.Shared.csproj"
               }
             }
           }
@@ -147,7 +147,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -194,24 +194,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Domain\\Gastos.Domain.csproj": {
+    "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Domain\\Gastos.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Domain\\Gastos.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Domain\\Gastos.Domain.csproj",
         "projectName": "Gastos.Domain",
-        "projectPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Domain\\Gastos.Domain.csproj",
-        "packagesPath": "C:\\Users\\eu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Domain\\obj\\",
+        "projectPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Domain\\Gastos.Domain.csproj",
+        "packagesPath": "C:\\Users\\joaog\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\eu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joaog\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -238,7 +238,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -259,24 +259,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Infrastructure\\Gastos.Infrastructure.csproj": {
+    "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Infrastructure\\Gastos.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Infrastructure\\Gastos.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Infrastructure\\Gastos.Infrastructure.csproj",
         "projectName": "Gastos.Infrastructure",
-        "projectPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Infrastructure\\Gastos.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\eu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Infrastructure\\Gastos.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\joaog\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\eu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joaog\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -291,11 +291,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Application\\Gastos.Application.csproj": {
-                "projectPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Application\\Gastos.Application.csproj"
+              "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Application\\Gastos.Application.csproj": {
+                "projectPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Application\\Gastos.Application.csproj"
               },
-              "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Shared\\Gastos.Shared.csproj": {
-                "projectPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Shared\\Gastos.Shared.csproj"
+              "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Shared\\Gastos.Shared.csproj": {
+                "projectPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Shared\\Gastos.Shared.csproj"
               }
             }
           }
@@ -310,7 +310,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -337,24 +337,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Shared\\Gastos.Shared.csproj": {
+    "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Shared\\Gastos.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Shared\\Gastos.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Shared\\Gastos.Shared.csproj",
         "projectName": "Gastos.Shared",
-        "projectPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Shared\\Gastos.Shared.csproj",
-        "packagesPath": "C:\\Users\\eu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eu\\Documents\\GitHub\\GastosService\\Gastos.Shared\\obj\\",
+        "projectPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Shared\\Gastos.Shared.csproj",
+        "packagesPath": "C:\\Users\\joaog\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\eu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joaog\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -381,7 +381,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -402,7 +402,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

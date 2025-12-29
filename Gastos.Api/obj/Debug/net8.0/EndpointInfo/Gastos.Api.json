@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "Gastos.Api",
-    "version": "1.0"
+    "title": "Gastos API",
+    "version": "v1"
   },
   "paths": {
     "/api/Auth/AutenticarUsuario": {
@@ -166,6 +166,25 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "tags": [
+          "Gastos.Api"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       }

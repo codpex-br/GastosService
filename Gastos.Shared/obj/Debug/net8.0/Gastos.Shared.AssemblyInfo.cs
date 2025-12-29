@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gastos.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ca2bca0f915a8270a2fe90cc8a57c1ab6c3792f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0d1e669ae5d64dbb41a943dba96bcf1eb8e3d0a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gastos.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gastos.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

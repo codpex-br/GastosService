@@ -10,3 +10,15 @@ C:\Users\eu\Documents\GitHub\GastosService\Gastos.Shared\obj\Debug\net8.0\refint
 C:\Users\eu\Documents\GitHub\GastosService\Gastos.Shared\obj\Debug\net8.0\Gastos.Shared.pdb
 C:\Users\eu\Documents\GitHub\GastosService\Gastos.Shared\obj\Debug\net8.0\ref\Gastos.Shared.dll
 C:\Users\eu\Documents\GitHub\GastosService\Gastos.Shared\obj\Debug\net8.0\Gastos.Shared.sourcelink.json
+C:\Users\joaog\OneDrive\Documentos\GitHub\GastosService\Gastos.Shared\bin\Debug\net8.0\Gastos.Shared.deps.json
+C:\Users\joaog\OneDrive\Documentos\GitHub\GastosService\Gastos.Shared\bin\Debug\net8.0\Gastos.Shared.dll
+C:\Users\joaog\OneDrive\Documentos\GitHub\GastosService\Gastos.Shared\bin\Debug\net8.0\Gastos.Shared.pdb
+C:\Users\joaog\OneDrive\Documentos\GitHub\GastosService\Gastos.Shared\obj\Debug\net8.0\Gastos.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaog\OneDrive\Documentos\GitHub\GastosService\Gastos.Shared\obj\Debug\net8.0\Gastos.Shared.AssemblyInfoInputs.cache
+C:\Users\joaog\OneDrive\Documentos\GitHub\GastosService\Gastos.Shared\obj\Debug\net8.0\Gastos.Shared.AssemblyInfo.cs
+C:\Users\joaog\OneDrive\Documentos\GitHub\GastosService\Gastos.Shared\obj\Debug\net8.0\Gastos.Shared.csproj.CoreCompileInputs.cache
+C:\Users\joaog\OneDrive\Documentos\GitHub\GastosService\Gastos.Shared\obj\Debug\net8.0\Gastos.Shared.sourcelink.json
+C:\Users\joaog\OneDrive\Documentos\GitHub\GastosService\Gastos.Shared\obj\Debug\net8.0\Gastos.Shared.dll
+C:\Users\joaog\OneDrive\Documentos\GitHub\GastosService\Gastos.Shared\obj\Debug\net8.0\refint\Gastos.Shared.dll
+C:\Users\joaog\OneDrive\Documentos\GitHub\GastosService\Gastos.Shared\obj\Debug\net8.0\Gastos.Shared.pdb
+C:\Users\joaog\OneDrive\Documentos\GitHub\GastosService\Gastos.Shared\obj\Debug\net8.0\ref\Gastos.Shared.dll

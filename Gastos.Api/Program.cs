@@ -26,11 +26,11 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 
 var issuer = builder.Configuration["Jwt:Issuer"] ??
-             throw new ArgumentNullException("A chave 'Jwt:Issuer' não foi encontrada nas configurações.");
+             throw new ArgumentNullException("A chave 'Jwt:Issuer' nï¿½o foi encontrada nas configuraï¿½ï¿½es.");
 var audience = builder.Configuration["Jwt:Audience"] ??
-               throw new ArgumentNullException("A chave 'Jwt:Audience' não foi encontrada nas configurações.");
+               throw new ArgumentNullException("A chave 'Jwt:Audience' nï¿½o foi encontrada nas configuraï¿½ï¿½es.");
 var accessSecret = builder.Configuration["Jwt:AccessSecret"] ??
-                   throw new ArgumentNullException("A chave 'Jwt:AccessSecret' não foi encontrada nas configurações.");
+                   throw new ArgumentNullException("A chave 'Jwt:AccessSecret' nï¿½o foi encontrada nas configuraï¿½ï¿½es.");
 
 var accessKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(accessSecret));
 
@@ -52,12 +52,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         {
             OnAuthenticationFailed = context =>
             {
-                Console.WriteLine($"Token inválido: {context.Exception.Message}");
+                Console.WriteLine($"Token invï¿½lido: {context.Exception.Message}");
                 return Task.CompletedTask;
             },
             OnTokenValidated = context =>
             {
-                Console.WriteLine($"Token válido para: {context.Principal.Identity.Name}");
+                Console.WriteLine($"Token vï¿½lido para: {context.Principal.Identity.Name}");
                 return Task.CompletedTask;
             }
         };
@@ -71,20 +71,23 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
     });
 
-builder.Services.AddCors(options =>
+builder.Services.AddCors(p => p.AddPolicy("corsapp", policy =>
 {
-    options.AddPolicy("Default", policy =>
-    {
-        policy
-        .WithOrigins("http://localhost:5173", "http://192.168.1.2:5173")
+    policy
+        .WithOrigins("https://gastosservice-ovgk.onrender.com")
         .AllowAnyMethod()
         .AllowAnyHeader()
         .AllowCredentials();
-    });
-});
+}));
 
 builder.Services.AddSwaggerGen(options =>
 {
+    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "Gastos API",
+        Version = "v1"
+    });
+
     options.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -106,7 +109,7 @@ builder.Services.AddSwaggerGen(options =>
                     Id = "Bearer"
                 }
             },
-            new string[] {}
+            Array.Empty<string>()
         }
     });
 });
@@ -116,22 +119,43 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
+var uploadsPath = Path.Combine(app.Environment.ContentRootPath, "wwwroot", "uploads");
 
-if (app.Environment.IsDevelopment())
+if (!Directory.Exists(uploadsPath))
+{
+    Directory.CreateDirectory(uploadsPath);
+}
+
+app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(uploadsPath),
+    RequestPath = "/uploads"
+});
+
+if (app.Environment.IsProduction())
+{
+    app.UseHttpsRedirection();
+}
+
+app.UseCors("corsapp");
+app.UseRouting();
+
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
     app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
+        options.RoutePrefix = "swagger";
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
     });
 }
 
-app.UseHttpsRedirection();
-app.UseRouting();
-app.UseCors("Default");
-app.UseAuthentication(); 
+app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
+
 app.MapGet("/health", () => "OK");
 
 if (app.Environment.IsProduction())
@@ -141,7 +165,7 @@ if (app.Environment.IsProduction())
         try
         {
             using var client = new HttpClient();
-            var url = "https://meetservices.onrender.com/health";
+            var url = "https://gastosservice-ovgk.onrender.com/health";
             var response = await client.GetAsync(url);
 
             Console.WriteLine($"[KeepAlive] {DateTime.Now}: {response.StatusCode}");
@@ -152,13 +176,5 @@ if (app.Environment.IsProduction())
         }
     }, null, TimeSpan.Zero, TimeSpan.FromMinutes(14));
 }
-
-app.UseStaticFiles();
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(builder.Environment.ContentRootPath, "wwwroot", "uploads")),
-    RequestPath = "/uploads"
-});
 
 app.Run();

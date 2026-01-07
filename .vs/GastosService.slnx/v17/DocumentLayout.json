@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CF8E5CFC-FC3E-BA4A-74F3-DE3D593390A3}|Gastos.Api\\Gastos.Api.csproj|c:\\users\\joaog\\onedrive\\documentos\\github\\gastosservice\\gastos.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF8E5CFC-FC3E-BA4A-74F3-DE3D593390A3}|Gastos.Api\\Gastos.Api.csproj|solutionrelative:gastos.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CF8E5CFC-FC3E-BA4A-74F3-DE3D593390A3}|Gastos.Api\\Gastos.Api.csproj|c:\\users\\joaog\\onedrive\\documentos\\github\\gastosservice\\gastos.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{CF8E5CFC-FC3E-BA4A-74F3-DE3D593390A3}|Gastos.Api\\Gastos.Api.csproj|solutionrelative:gastos.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -23,19 +27,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Gastos.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Api\\appsettings.json",
+              "RelativeToolTip": "Gastos.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-07T01:35:27.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Gastos.Api\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Api\\Properties\\launchSettings.json",
               "RelativeToolTip": "Gastos.Api\\Properties\\launchSettings.json",
-              "ViewState": "AgIAABcAAAAAAAAAAAAIwCUAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwCUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-28T21:22:26.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\joaog\\OneDrive\\Documentos\\GitHub\\GastosService\\Gastos.Api\\Program.cs",
               "RelativeDocumentMoniker": "Gastos.Api\\Program.cs",
@@ -43,8 +60,7 @@
               "RelativeToolTip": "Gastos.Api\\Program.cs",
               "ViewState": "AgIAAJkAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T21:11:24.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-28T21:11:24.396Z"
             }
           ]
         }

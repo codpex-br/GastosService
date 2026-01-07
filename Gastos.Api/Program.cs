@@ -74,7 +74,7 @@ builder.Services.AddControllers()
 builder.Services.AddCors(p => p.AddPolicy("corsapp", policy =>
 {
     policy
-        .WithOrigins("https://gastosservice-ovgk.onrender.com")
+        .WithOrigins("https://gastos-ivonry.vercel.app", "https://gastosservice-ovgk.onrender.com")
         .AllowAnyMethod()
         .AllowAnyHeader()
         .AllowCredentials();
